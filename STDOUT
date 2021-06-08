@@ -1,0 +1,14 @@
+Feature: test the Mercury login
+
+  @tag1
+  Scenario: Login to MercuryTours                                           [90m# Features/Mercury_Datatable.feature:4[0m
+    [32mGiven [0m[32mUser is navigating to MercuryTours Login Page[0m                     [90m# MercuryLogin.InvokeMercuryToursApp()[0m
+    [31mThen [0m[31mvalidate the mercury title[0m                                         [90m# MercuryLogin.verifyMercuryTourstitle()[0m
+      [31mjunit.framework.ComparisonFailure: expected:<[Welcome: Mercury Tours]> but was:<[Google]>
+      	at junit.framework.Assert.assertEquals(Assert.java:100)
+      	at junit.framework.Assert.assertEquals(Assert.java:107)
+      	at Stepdefinition.MercuryLogin.verifyMercuryTourstitle(MercuryLogin.java:54)
+      	at ✽.Then validate the mercury title(Features/Mercury_Datatable.feature:6)
+      [0m
+    [36mThen [0m[36mvalidate the mercury logo[0m                                          [90m# MercuryLogin.verifymercuryLogo()[0m
+    [36mWhen [0m[36mUser need to enter username and password and click on login button[0m [90m# MercuryLogin.user_need_to_enter_username_and_password_and_click_on_login_button(DataTable)[0m

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="11.096451">
+<testcase classname="test the Mercury login" name="Login to MercuryTours" time="11.096451">
+<failure message="junit.framework.ComparisonFailure: expected:&lt;[Welcome: Mercury Tours]&gt; but was:&lt;[Google]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at Stepdefinition.MercuryLogin.verifyMercuryTourstitle(MercuryLogin.java:54)&#13;&#10;&#9;at ✽.Then validate the mercury title(F:/Java/CucumberWithoutMaven/Features/Mercury_Datatable.feature:6)&#13;&#10;"><![CDATA[Given User is navigating to MercuryTours Login Page.........................passed
+Then validate the mercury title.............................................failed
+Then validate the mercury logo..............................................skipped
+When User need to enter username and password and click on login button.....skipped
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<[Welcome: Mercury Tours]> but was:<[Google]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at Stepdefinition.MercuryLogin.verifyMercuryTourstitle(MercuryLogin.java:54)
+	at ✽.Then validate the mercury title(F:/Java/CucumberWithoutMaven/Features/Mercury_Datatable.feature:6)
+]]></failure>
+</testcase>
+</testsuite>
